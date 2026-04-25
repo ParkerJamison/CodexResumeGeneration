@@ -1,0 +1,7 @@
+I am applying for the Software Engineering Intern role at Example Robotics. The position stands out because it combines Python tooling, systems integration, and practical applied AI work in a way that matches the example candidate profile in this repository.
+
+In the sample experience, the candidate built a Python toolkit that wrapped a C-style device API, added generated documentation, and created testable examples for common integration workflows. That kind of work reflects the engineering habits this project is designed to surface: clear interfaces, reproducible validation, and documentation that helps other developers use the result.
+
+The sample project work also aligns with roles that connect software engineering to automation and applied AI. The candidate profile includes a computer vision defect-detection demo, a Raspberry Pi sensor dashboard, and an LLM support triage assistant, each written as replaceable example content rather than real candidate history.
+
+I would welcome the chance to contribute that mix of Python, systems thinking, and applied AI project experience to Example Robotics. Thank you for your time and consideration.

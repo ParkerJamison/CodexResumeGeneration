@@ -1,0 +1,18 @@
+{
+  "company": "Example Robotics",
+  "role": "Software Engineering Intern",
+  "location": "Seattle, WA",
+  "work_type": "Hybrid",
+  "source": "Sample Input",
+  "job_link": "",
+  "job_description": "Sample robotics software internship used for smoke testing the application package workflow.",
+  "priority": "Medium",
+  "match_notes": "Example package for validating the resume, cover letter, and tracker pipeline.",
+  "cover_letter_status": "Drafted",
+  "current_status": "Cover Letter Drafted",
+  "next_action": "Smoke-test only",
+  "notes": "This sample context exists to verify the end-to-end orchestration command.",
+  "assumptions": [
+    "Example company data is for smoke testing only."
+  ]
+}

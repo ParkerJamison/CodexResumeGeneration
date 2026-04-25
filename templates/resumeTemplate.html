@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ candidate.full_name }} Resume</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 0.28in 0.32in;
+      }
+
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 10pt;
+        line-height: 1.12;
+        color: #111111;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 16pt;
+        margin: 0 0 2pt 0;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 11pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid #bdbdbd;
+        margin: 7pt 0 3pt 0;
+        padding: 0 0 1pt 0;
+      }
+
+      p {
+        margin: 0 0 2pt 0;
+      }
+
+      .contact-line {
+        font-size: 9.5pt;
+        text-align: center;
+        margin: 0;
+      }
+
+      .contact-links {
+        margin-top: 1pt;
+      }
+
+      .contact-line a {
+        color: #0563c1;
+        text-decoration: underline;
+      }
+
+      .summary {
+        margin-top: 4pt;
+        font-size: 9.5pt;
+        text-align: center;
+      }
+
+      table.entry {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+      }
+
+      td.entry-title {
+        font-weight: bold;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      td.entry-meta {
+        color: #555555;
+        text-align: right;
+        vertical-align: top;
+        white-space: nowrap;
+      }
+
+      .subline {
+        color: #555555;
+        margin: 1pt 0 0 0;
+      }
+
+      .entry-block {
+        margin: 0 0 5pt 0;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      ul {
+        margin: 1pt 0 0 14pt;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 1pt 0;
+      }
+
+      .skill-line {
+        margin: 0 0 2pt 0;
+      }
+
+      .skill-label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ candidate.full_name }}</h1>
+
+    <p class="contact-line">
+      {% for item in contact_primary_items %}{% if not loop.first %} | {% endif %}{% if item.url %}
+      <a href="{{ item.url }}">{{ item.label }}</a>{% else %}{{ item.label }}{% endif %}{% endfor %}
+    </p>
+
+    {% if contact_secondary_items %}
+    <p class="contact-line contact-links">
+      {% for item in contact_secondary_items %}{% if not loop.first %} | {% endif %}
+      <a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
+    </p>
+    {% endif %}
+
+    {% if summary %}
+    <p class="summary">{{ summary }}</p>
+    {% endif %}
+
+    {% if education %}
+    <h2>Education</h2>
+    {% for entry in education %}
+    <div class="entry-block">
+      <table class="entry">
+        <tr>
+          <td class="entry-title">{{ entry.school }}</td>
+          <td class="entry-meta">{{ entry.date }}</td>
+        </tr>
+      </table>
+      {% if entry.subline %}
+      <p class="subline">{{ entry.subline }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if skills %}
+    <h2>Technical Skills</h2>
+    {% for category in skills %}
+    <p class="skill-line">
+      <span class="skill-label">{{ category.name }}:</span>
+      {{ category.skill_list | join(", ") }}
+    </p>
+    {% endfor %}
+    {% endif %}
+
+    {% if projects %}
+    <h2>Projects</h2>
+    {% for project in projects %}
+    <div class="entry-block">
+      <table class="entry">
+        <tr>
+          <td class="entry-title">{{ project.title }}</td>
+          <td class="entry-meta">{{ project.meta }}</td>
+        </tr>
+      </table>
+      {% if project.summary or project.bullets %}
+      <ul>
+        {% if project.summary %}
+        <li>{{ project.summary }}</li>
+        {% endif %}
+        {% for bullet in project.bullets %}
+        <li>{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if employment %}
+    <h2>Employment</h2>
+    {% for job in employment %}
+    <div class="entry-block">
+      <table class="entry">
+        <tr>
+          <td class="entry-title">
+            {{ job.title }}{% if job.company %}, {{ job.company }}{% endif %}{% if job.location %}, {{ job.location }}{% endif %}
+          </td>
+          <td class="entry-meta">{{ job.date_range }}</td>
+        </tr>
+      </table>
+      {% if job.bullets %}
+      <ul>
+        {% for bullet in job.bullets %}
+        <li>{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+    {% endif %}
+  </body>
+</html>

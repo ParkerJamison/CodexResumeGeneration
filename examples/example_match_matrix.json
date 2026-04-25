@@ -1,0 +1,92 @@
+{
+  "company": "Example Robotics",
+  "role_title": "Software Engineering Intern",
+  "role_type": "software_engineering_intern",
+  "location_or_remote": "Seattle, WA / Hybrid",
+  "layout_profile": "focused_one_page",
+  "top_keywords": [
+    "Python tooling",
+    "systems integration",
+    "applied AI",
+    "technical documentation"
+  ],
+  "top_requirements": [
+    "Python development",
+    "Applied AI or automation project experience",
+    "Technical communication",
+    "Systems-oriented software engineering"
+  ],
+  "requirement_to_evidence": [
+    {
+      "requirement": "Python development",
+      "evidence": [
+        "Example Robotics Python toolkit wrapping a C-style device API",
+        "Raspberry Pi Sensor Dashboard written with Python and Flask"
+      ],
+      "resume_priority": "high",
+      "cover_letter_priority": "high"
+    },
+    {
+      "requirement": "Applied AI or automation project experience",
+      "evidence": [
+        "Computer Vision Defect Detection Demo built with OpenCV and PyTorch",
+        "LLM Support Triage Assistant using prompt templates and structured outputs"
+      ],
+      "resume_priority": "high",
+      "cover_letter_priority": "high"
+    },
+    {
+      "requirement": "Technical communication",
+      "evidence": [
+        "Example Robotics generated documentation and sample notebooks",
+        "Acme Automation Lab setup notes, assumptions, and validation summaries"
+      ],
+      "resume_priority": "medium",
+      "cover_letter_priority": "high"
+    }
+  ],
+  "selected_projects": [
+    {
+      "name": "Computer Vision Defect Detection Demo",
+      "reason_selected": "Directly supports applied AI, image processing, OpenCV, and PyTorch requirements.",
+      "priority": "high"
+    },
+    {
+      "name": "Raspberry Pi Sensor Dashboard",
+      "reason_selected": "Shows automation, small-device deployment, logging, alerts, and repeatable setup documentation.",
+      "priority": "high"
+    }
+  ],
+  "selected_employment": [
+    {
+      "name": "Example Robotics Software Engineering Intern",
+      "reason_selected": "Strongest sample professional evidence for Python tooling, documentation, and C-style API integration.",
+      "priority": "high"
+    },
+    {
+      "name": "Acme Automation Lab Software Projects Assistant",
+      "reason_selected": "Supports automation tooling, computer vision prototyping, stakeholder communication, and reproducible notes.",
+      "priority": "medium"
+    }
+  ],
+  "selected_skills": [
+    "Python",
+    "C++",
+    "OpenCV",
+    "PyTorch",
+    "Linux",
+    "pytest",
+    "Technical documentation"
+  ],
+  "gaps": [
+    {
+      "gap": "No direct production robotics deployment experience is listed in the sample CV.",
+      "mitigation": "Emphasize adjacent automation, computer vision, Raspberry Pi deployment, systems tooling, and technical communication."
+    }
+  ],
+  "gap_mitigation": [
+    "Use adjacent software, applied AI, and device-facing tooling evidence without claiming direct production robotics employment."
+  ],
+  "resume_strategy": "Lead with Python tooling, applied AI, OpenCV, PyTorch, automation, and systems integration evidence.",
+  "cover_letter_strategy": "Frame the example candidate as an early-career engineer with practical Python tooling, applied AI, and documentation experience."
+}

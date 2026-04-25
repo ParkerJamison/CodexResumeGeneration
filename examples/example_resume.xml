@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+  <summary>Software engineer focused on automation, applied AI, and developer tooling, with example experience in Python, C/C++, computer vision prototypes, Raspberry Pi workflows, and testable backend services.</summary>
+
+  <education>
+    <entry>
+      <school>Example University</school>
+      <degree>BS</degree>
+      <major>Computer Science</major>
+      <graduation_year>2026</graduation_year>
+      <gpa>3.80</gpa>
+      <location>City, ST</location>
+    </entry>
+  </education>
+
+  <technical_skills>
+    <category name="Languages">
+      <skill>Python</skill>
+      <skill>C</skill>
+      <skill>C++</skill>
+      <skill>JavaScript</skill>
+      <skill>SQL</skill>
+      <skill>Bash</skill>
+    </category>
+    <category name="AI/ML and Computer Vision">
+      <skill>PyTorch</skill>
+      <skill>scikit-learn</skill>
+      <skill>NumPy</skill>
+      <skill>OpenCV</skill>
+      <skill>Transfer Learning</skill>
+      <skill>Model Evaluation</skill>
+    </category>
+    <category name="Web and LLM Applications">
+      <skill>React</skill>
+      <skill>Flask</skill>
+      <skill>REST APIs</skill>
+      <skill>JSON Schemas</skill>
+      <skill>Prompt Templates</skill>
+    </category>
+    <category name="Systems and Tools">
+      <skill>Linux</skill>
+      <skill>Docker</skill>
+      <skill>Git</skill>
+      <skill>CMake</skill>
+      <skill>OpenMP</skill>
+      <skill>pytest</skill>
+    </category>
+  </technical_skills>
+
+  <projects>
+    <project>
+      <title>Computer Vision Defect Detection Demo</title>
+      <tech_stack>Python, OpenCV, PyTorch</tech_stack>
+      <description>Built a prototype image-classification workflow for detecting visual defects in sample images.</description>
+      <highlights>
+        <bullet>Prepared a labeled sample dataset with repeatable preprocessing and augmentation scripts.</bullet>
+        <bullet>Trained a baseline model and summarized evaluation results for future iteration.</bullet>
+        <bullet>Documented setup steps, known limitations, and recommended next experiments.</bullet>
+      </highlights>
+    </project>
+    <project>
+      <title>Raspberry Pi Sensor Dashboard</title>
+      <tech_stack>Python, Flask, Raspberry Pi</tech_stack>
+      <description>Built a small-device workflow for collecting sensor readings, logging events, and displaying status.</description>
+      <highlights>
+        <bullet>Implemented structured logging and threshold-based alerts for important status changes.</bullet>
+        <bullet>Created a lightweight dashboard to show recent readings and device health.</bullet>
+        <bullet>Added configuration files and setup notes to support repeatable deployment.</bullet>
+      </highlights>
+    </project>
+  </projects>
+
+  <employment>
+    <job>
+      <company>Example Robotics</company>
+      <title>Software Engineering Intern</title>
+      <location>Remote</location>
+      <start_date>2024-06</start_date>
+      <end_date>2024-09</end_date>
+      <responsibilities>
+        <bullet>Built a Python toolkit that wrapped a C-style device API for common integration workflows.</bullet>
+        <bullet>Automated documentation generation from structured metadata so examples stayed aligned with API changes.</bullet>
+        <bullet>Added unit tests and sample notebooks covering setup, command execution, and error handling.</bullet>
+      </responsibilities>
+    </job>
+    <job>
+      <company>Acme Automation Lab</company>
+      <title>Software Projects Assistant</title>
+      <location>City, ST</location>
+      <start_date>2023-01</start_date>
+      <end_date>2024-05</end_date>
+      <responsibilities>
+        <bullet>Built internal tools for data cleanup, report generation, and task tracking using Python scripts.</bullet>
+        <bullet>Helped prototype image-processing workflows using OpenCV, PyTorch, and repeatable evaluation notes.</bullet>
+        <bullet>Translated informal project requests into scoped tasks, assumptions, and acceptance criteria.</bullet>
+      </responsibilities>
+    </job>
+  </employment>
+</resume>

@@ -1,0 +1,60 @@
+# Template source of truth for candidate contact data, target roles,
+# compensation preferences, and reusable proof points.
+#
+# Replace the placeholder/example values below before generating real
+# application materials.
+
+candidate:
+  full_name: "Example Candidate"
+  email: "candidate@example.com"
+  phone: "555-010-1234"
+  location: "City, ST"
+  linkedin: "linkedin.com/in/example-candidate"
+  portfolio_url: "https://example.com"
+  github: "github.com/example-candidate"
+  twitter: ""
+
+narrative:
+  headline: "Software engineer focused on automation, applied AI, and developer tooling"
+  exit_story: "Early-career software engineer with example experience building Python tooling, backend services, and applied AI prototypes, now targeting software engineering roles connected to automation, AI/ML, robotics, embedded systems, or developer tooling."
+  superpowers:
+    - "Builds Python applications that integrate with lower-level systems and hardware-facing APIs"
+    - "Turns ambiguous requirements into documented, testable developer workflows"
+    - "Connects applied AI prototypes with practical software engineering patterns"
+    - "Creates maintainable tools for automation, data processing, and system validation"
+    - "Communicates clearly with technical and non-technical stakeholders"
+  proof_points:
+    - name: "Example API Automation Toolkit"
+      url: ""
+      hero_metric: "Built a Python toolkit that wrapped a C-style device API, generated documentation stubs, and reduced repetitive integration work"
+    - name: "Computer Vision Defect Detection Demo"
+      url: ""
+      hero_metric: "Created an OpenCV and PyTorch prototype for image classification, dataset preparation, and model evaluation"
+    - name: "Raspberry Pi Sensor Dashboard"
+      url: ""
+      hero_metric: "Deployed a Raspberry Pi data capture workflow with alerts, logging, and repeatable setup documentation"
+    - name: "LLM Support Triage Assistant"
+      url: ""
+      hero_metric: "Built an LLM-powered workflow that summarized user requests, selected tools, and recorded structured outcomes"
+    - name: "Path Planning Simulator"
+      url: ""
+      hero_metric: "Implemented a robotics-oriented simulation for grid navigation, obstacle handling, and algorithm comparison"
+    - name: "Parallel Data Processing Benchmark"
+      url: ""
+      hero_metric: "Benchmarked serial and parallel C++ data-processing routines with reproducible scripts and scaling notes"
+
+compensation:
+  target_range: "$70K-120K"
+  currency: "USD"
+  minimum: "$60K"
+  location_flexibility: "Remote or hybrid preferred; open to relocation for strong-fit roles"
+
+location:
+  country: "United States"
+  city: "City"
+  timezone: "America/Los_Angeles"
+  visa_status: "Customize this field before use"
+  onsite_availability: "Remote or hybrid preferred; customize relocation preferences before use"
+
+preferences:
+  role_focus: "Prioritize software engineering roles connected to automation, AI/ML, computer vision, robotics, embedded systems, LLM applications, or developer tooling. Customize this statement for the real candidate."
